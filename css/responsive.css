@@ -247,7 +247,7 @@
 
 /* Pop Up Carrinho Pedidos Responsividade */
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
     #pop-up-carrinho-pedidos.ativar_adicionar .pop-up-pedido-estrutura {
         width: 400px;
     }
