@@ -1,0 +1,314 @@
+/* Nav Bar Responsiva */
+
+@media(max-width: 740px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        align-self: flex-end;
+        height: 40px;
+        align-items: center;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin: 0 25px;
+    }
+
+    .menu-toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+    }
+
+    .menu-toggle.ativar_menu::before {
+        content: '\f00d';
+    }
+
+    nav.ativar_menu {
+        display: block;
+        width: 100%;
+    }
+
+    nav.ativar_menu ul {
+        display: block;
+        flex-direction: column;
+    }
+
+    nav.ativar_menu ul li a {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    nav.ativar_menu ul li .bloco-interno-valor-carrinho {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+/* Menu Responsivo */
+
+@media(max-width: 966px) {
+    #menu {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .linha-menu {
+        margin: -10px 0;
+    }
+
+    .itens-menu {
+        width: 95vw;
+    }
+}
+
+@media(max-width: 490px) {
+    .item-img {
+        width: 150px;
+        height: 150px;
+        margin-left: 15px;
+    }
+
+    .item-info {
+        margin: 10px 15px;
+    }
+
+    .item-nome {
+        font-size: 10px;
+    }
+
+    .item-descricao {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 340px) {
+    .item-img {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .item-nome {
+        height: 50px;
+    }
+
+    .item-descricao {
+        height: 140px;
+    }
+}
+
+/* Pop Up Itens Menu Responsividade */
+
+@media(max-width: 1300px) {
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-caixa {
+        height: 400px;
+        width: 800px;
+    }
+}
+
+@media(max-width: 910px) {
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-caixa {
+        width: 500px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-alinhamento {
+        flex-direction: column;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-img {
+        height: 150px;
+        width: 50%;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pedido-img {
+        height: 100%;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-nome {
+        margin-top: 10px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-descricao {
+        margin: 0;
+        padding: 5px 15px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-valor {
+        margin: 10px 15px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-bloco-valores {
+        justify-content: center;
+        height: 40%;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-quantidade {
+        height: 40px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-valor-compra {
+        height: 40px;
+    }
+}
+
+@media(max-width: 860px) {
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-caixa {
+        height: 350px;
+        width: 350px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-img {
+        height: 140px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-nome {
+        font-size: 10px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-descricao {
+        font-size: 11px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-valor {
+        font-size: 11px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-valor-atual {
+        width: 80px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-botao {
+        font-size: 20px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-quantidade-atual {
+        font-size: 15px;
+        width: 18px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-valor-compra {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 700px) {
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-caixa {
+        height: 270px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-img {
+        height: 85px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-descricao {
+        padding: 5px 15px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-valor {
+        margin: 5px 15px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-quantidade {
+        height: 40px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-valor-compra {
+        height: 40px;
+    }
+}
+
+@media(max-width: 540px) {
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-caixa {
+        height: 350px;
+        width: 250px;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-pedido-bloco-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-quantidade {
+        margin: 10px 0;
+    }
+
+    #pop-up-estrutura.ativar_pedido .pop-up-bloco-valor-compra {
+        margin: auto;
+    }
+}
+
+/* Pop Up Carrinho Pedidos Responsividade */
+
+@media(max-width: 600px) {
+    #pop-up-carrinho-pedidos.ativar_adicionar .pop-up-pedido-estrutura {
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 420px) {
+    #pop-up-carrinho-pedidos.ativar_adicionar .pop-up-pedido-estrutura {
+        height: 300px;
+        width: 200px;
+    }
+
+    #pop-up-carrinho-pedidos.ativar_adicionar .pop-up-carrinho-pedido-botoes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        margin: 15px 0;
+    }
+
+    #pop-up-carrinho-pedidos.ativar_adicionar .pop-up-carrinho-pedido-botao-limpar {
+        height: 35px;
+    }
+
+    #pop-up-carrinho-pedidos.ativar_adicionar .pop-up-carrinho-pedido-botao-comprar {
+        height: 35px;
+    }
+}
+
+/* Quem Somos? Responsivo e Contato Responsivo */
+
+@media(max-width: 320px) {
+    .quem-somos-titulo {
+        font-size: 25px;
+    }
+
+    .quem-somos-info {
+        font-size: 15px;
+    }
+
+    .contato-titulo {
+        font-size: 25px;
+    }
+
+    .contato-info {
+        font-size: 15px;
+    }
+}
+
+/* Footer Responsivo */
+
+@media(max-width: 300px) {
+    .dados-nav {
+        font-size: 13px;
+    }
+
+    .icon-img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .info-direitos {
+        font-size: 10px;
+    }
+}

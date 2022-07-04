@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <title>Services</title>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <header>
+        <div class="logo">
+            <a class="logo-a" href="#">Services</a>
+        </div>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#nav-bar-quem-somos">Quem Somos?</a></li>
+                <li><a href="#nav-bar-contato">Contato</a></li>
+                <li>
+                    <div id="referencia-carrinho-pedidos" class="bloco-valor-carrinho bloco-interno-valor-carrinho"><img
+                            class="icon-carrinho" src="img/icon-carrinho-menu.png" alt="Ícone Carrinho">
+                        <p class="valor-carrinho-base">R$ </p><span id="valor-adicionado-carrinho"
+                            class="valor-carrinho-base">0.00</span>
+                </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Banner Rotativo-->
+    <section class="banner-rotativo">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img id="img1-pop-up" class="box-img" src="img/Item1.PNG"
+                    alt="2 HOT DOG SIMPLES + REFRI 350ML" onclick="imgPopUp1()"></div>
+            <div class="item"><img id="img2-pop-up" class="box-img" src="img/Item2.PNG"
+                    alt="2 HOT DOG CALABRESA + REFRI 350ML" onclick="imgPopUp2()"></div>
+            <div class="item"><img id="img3-pop-up" class="box-img" src="img/Item3.PNG"
+                    alt="2 HOT DOG DA CASA + REFRI 350ML" onclick="imgPopUp3()"></div>
+            <div class="item"><img id="img4-pop-up" class="box-img" src="img/Item4.PNG"
+                    alt="2 CALABRESA PREMIUM + REFRIGERANTE 350ML" onclick="imgPopUp4()"></div>
+        </div>
+    </section>
+
+    <!--Menu-->
+    <section id="menu">
+        <div class="linha-menu">
+            <div id="item1-pop-up" class="itens-menu">
+                <img class="item-img" src="img/Item1.PNG" alt="2 HOT DOG SIMPLES + REFRI 350ML">
+                <div class="item-info">
+                    <p id="nome1" class="item-nome">2 HOT DOG SIMPLES + REFRI 350ML</p>
+                    <p id="descricao1" class="item-descricao">Pão, maionese, purê de batata caseiro, salsicha perdigão,
+                        vinagrete
+                        sem cebola, milho e batata palha.Acompanha: Refrigerante 350ml</p>
+                    <p class="item-valor">R$ <span id="valor1">21.99</span></p>
+                </div>
+            </div>
+            <div id="item2-pop-up" class="itens-menu">
+                <img class="item-img" src="img/Item2.PNG" alt="2 HOT DOG CALABRESA + REFRI 350ML">
+                <div class="item-info">
+                    <p id="nome2" class="item-nome">2 HOT DOG CALABRESA + REFRI 350ML</p>
+                    <p id="descricao2" class="item-descricao">Pão, maionese, purê de batata caseiro, salsicha perdigão,
+                        calabresa ralada, vinagrete sem cebola, milho e batata palha.
+                        Acompanha: Refrigerante 350ml</p>
+                    <p class="item-valor">R$ <span id="valor2">25.99</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="linha-menu">
+            <div id="item3-pop-up" class="itens-menu">
+                <img class="item-img" src="img/Item3.PNG" alt="2 HOT DOG DA CASA + REFRI 350ML">
+                <div class="item-info">
+                    <p id="nome3" class="item-nome">2 HOT DOG DA CASA + REFRI 350ML</p>
+                    <p id="descricao3" class="item-descricao">Pão, maionese, purê de batata caseiro, 2 Salsichas
+                        perdigão, calabresa ralada, bacon, vinagrete sem cebola, milho, cheddar e batata palha.
+                        Acompanha: Refrigerante 350ml</p>
+                    <p class="item-valor">R$ <span id="valor3">33.99</span></p>
+                </div>
+            </div>
+            <div id="item4-pop-up" class="itens-menu">
+                <img class="item-img" src="img/Item4.PNG" alt="2 CALABRESA PREMIUM + REFRIGERANTE 350ML">
+                <div class="item-info">
+                    <p id="nome4" class="item-nome">2 CALABRESA PREMIUM + REFRIGERANTE 350ML</p>
+                    <p id="descricao4" class="item-descricao">2 Hot Dog Calabresa premium e acompanhamento de
+                        refrigerante 350ml de sua preferência.</p>
+                    <p class="item-valor">R$ <span id="valor4">29.99</span></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Pop Up Itens Menu-->
+    <section id="pop-up-estrutura">
+        <div class="pop-up-pedido-caixa">
+            <button id="close-pop-up" class="close-pop-up-base">X</button>
+            <div class="pop-up-pedido-alinhamento">
+                <div class="pop-up-pedido-img">
+                    <img id="referencia-img" class="pedido-img" src="" alt="">
+                </div>
+                <div class="pop-up-pedido-base-dados">
+                    <div class="pop-up-pedido-dados-centrais">
+                        <div class="pop-up-pedido-dados-linha-nome-close">
+                            <p id="referencia-nome" class="pop-up-pedido-nome">-</p>
+                        </div>
+                        <p id="referencia-descricao" class="pop-up-pedido-descricao">-</p>
+                    </div>
+                    <p class="pop-up-pedido-valor">R$ <span id="referencia-valor">-</span></p>
+                    <div class="pop-up-pedido-bloco-valores">
+                        <div class="pop-up-bloco-quantidade">
+                            <button class="pop-up-bloco-botao" onclick="retirarValor()">-</button>
+                            <p id="referencia-quantidade-item" class="pop-up-bloco-quantidade-atual">1</p>
+                            <button class="pop-up-bloco-botao" onclick="adicionarValor()">+</button>
+                        </div>
+                        <div id="referencia-valor-total-adicionar" class="pop-up-bloco-valor-compra"
+                            onclick="adicionarCarrinho()">
+                            <p class="pop-up-bloco-adicionar">Adicionar</p>
+                            <p class="pop-up-bloco-valor-atual">R$ <span id="referencia-valor-atual">-</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pop Up Carrinho Pedidos-->
+    <section id="pop-up-carrinho-pedidos">
+        <div class="pop-up-pedido-estrutura">
+            <div id="referencia-carrinho-pedidos-item" class="pop-up-pedido-info">
+                <button id="close-pop-up-carrinho-pedido" class="pop-up-pedido-close-carrinho-pedido">X</button>
+                <h3 class="pop-up-carrinho-titulo">Itens</h3>
+                <div class="pop-up-carrinho-pedido-linha-base espaco">
+                    <p class="pop-up-carrinho-pedido-identificacao">Quantidade Itens:</p>
+                    <p id="referencia-quantidade-itens-carrinho-pedido"
+                        class="pop-up-carrinho-pedidos-quantidade-itens">0</p>
+                </div>
+                <div class="pop-up-carrinho-pedido-linha-base">
+                    <p class="pop-up-carrinho-pedido-identificacao">Valor Total:</p>
+                    <p class="pop-up-carrinho-pedidos-valor">R$ <span
+                            id="referencia-valor-total-carrinho-pedido">0.00</span>
+                    </p>
+                </div>
+                <div class="pop-up-carrinho-pedido-botoes">
+                    <button class="pop-up-carrinho-pedido-botao-limpar" onclick="limparPedido()">Limpar Itens</button>
+                    <button class="pop-up-carrinho-pedido-botao-comprar" onclick="comprarPedido()">Finalizar
+                        Compra</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Quem Somos?-->
+    <section id="nav-bar-quem-somos" class="quem-somos">
+        <div class="quem-somos-estrutura">
+            <h3 class="quem-somos-titulo">Quem Somos?</h3>
+            <p class="quem-somos-info">Services, trabalhando com produtos mais frescos possivel, com destaque nos
+                purê de batata caseiro feito todos os dias. o Melhor Hot dog do Brasil. Partiu comer um delicioso e
+                saboroso
+                Hot Dog.</p>
+        </div>
+    </section>
+
+    <!--Contato-->
+    <hr>
+    <section id="nav-bar-contato" class="contato">
+        <div class="contato-estrutura">
+            <h3 class="contato-titulo">Contato</h3>
+            <p class="contato-info">Tel: (00)00000-0000</p>
+            <p class="contato-info">Endereço: Rua Exemplo Restautante, 500 - Vila Exemplo Novo - SP</p>
+            <p class="contato-info">Email: services@exemplo.com.br</p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="info-dados-superior">
+            <div class="info-nav">
+                <a href="#" class="dados-nav">Home</a>
+                <a href="#nav-bar-quem-somos" class="dados-nav">Quem Somos?</a>
+                <a href="#nav-bar-contato" class="dados-nav">Contato</a>
+            </div>
+            <div class="info-sociais">
+                <a href="#"><img class="icon-img" src="img/icon-facebook.png" alt="Ícone Facebook"></a>
+                <a href="#"><img class="icon-img" src="img/icon-instagram.png" alt="Ícone Instagram"></a>
+                <a href="#"><img class="icon-img" src="img/icon-twitter.png" alt="Ícone Twitter"></a>
+            </div>
+        </div>
+        <div class="info-reservado">
+            <p class="info-direitos">Todos os direitos reservados a Services</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7e929a58f6.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+
+</html>
